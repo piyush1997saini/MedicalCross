@@ -346,8 +346,11 @@
       <script type="text/javascript">
         $(document).ready(function(){
           $(window).scroll(function(){
-            if(document.body.scrollTop >400 || document.documentElement.scrollTop >400 ){
-      $('.navbar').css('background-color','rgba(62,62,172,0.9)');
+            if(document.body.scrollTop >100 || document.documentElement.scrollTop >100 ){
+      $('.navbar').css('background-color','rgba(62,62,172)');
+      }
+      else{
+        $('.navbar').css('background-color','transparent');
       }
           });
         });
